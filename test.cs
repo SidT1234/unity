@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using UnityEngine;
 // 1. You MUST add this line at the very top of your script
 using UnityEngine.InputSystem;
@@ -9,6 +10,7 @@ public class test : MonoBehaviour
 
     void FixedUpdate()
     {
+        Debug.log("testing...");
         HandleSteering(wh);
         UpdateWheelVisuals(wh, mesh);
     }
